@@ -113,6 +113,14 @@
         </li>
       {% endif %}
 
+      {% if author.researchgate %}
+        <li>
+          <a href="https://www.researchgate.net/profile/{{ author.researchgate }}" itemprop="sameAs">
+            <i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.instagram %}
         <li>
           <a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs">
